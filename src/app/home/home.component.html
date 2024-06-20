@@ -1,0 +1,45 @@
+<!-- https://www.youtube.com/watch?v=855KrFfF9-w -->
+
+<ul class="container responsive-grid">
+    <li *ngFor="let datas of data" class="list-group-item">
+
+         <div class="images">
+           <img src="{{datas.image}}" alt=""> 
+             <div>{{datas.description}}</div>
+         <div>
+            <mat-card>
+                <img mat-card-sm-image > 
+            </mat-card>
+         </div>
+        </div>
+        <div>
+            <mat-card>
+                <div class="images">
+                    <img mat-card-image src="{{datas.image}}" alt="Photo of a Shiba Inu">
+                </div>
+                <div>
+                   <p class="ti">{{datas.title}}</p>
+                </div>
+                <div class="price">
+                    {{datas.price | currency:'INR':true}}
+                </div>
+                
+
+                <mat-card-actions>
+                    <button mat-button color="black" (click)="add(data)" >ADD +</button>
+                    
+                     <!-- <div>
+                        <button (click)="handlequantity('min')">-</button>
+                        <input type="text" value="{{carditem}}"/>
+                        <button (click)="handlequantity('plus')">+</button>
+                    </div>  -->
+
+                </mat-card-actions>
+            </mat-card>
+        </div> 
+        
+
+
+    </li>
+    
+</ul>

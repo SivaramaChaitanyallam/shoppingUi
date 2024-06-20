@@ -1,0 +1,38 @@
+<div class="card-table">
+    <div class="cart-product">
+        <table class="table table-responsive">
+            <thead>
+                <tr>
+                    <th>sr.no</th>
+                    <th>product name</th>
+                    <th>product img</th>
+                    <th>description</th>
+                    <th>price</th>
+                    <th>quantity</th>
+                  
+                    <th>action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of cartitemlist;let i =index">
+                    <td>{{item.id}}</td>
+                    <td>{{item.title}}</td>
+                    <td>
+                        <img style="width: 30px;" src="{{item.image}}">
+                    </td>
+                    <td>{{item.description}}</td>
+                    <td>{{item.price}}</td>
+                    <td>{{item.quantity}}</td>
+                   
+                    <td>
+                        <button class="btn btn-danger" (click)="removeItem(i)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+        <div>
+            <button style="background-color: blue;color: white;" (click)="submitodb()">place order</button>
+        </div>
+    </div>
+</div>

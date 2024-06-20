@@ -1,0 +1,37 @@
+<!-- <body>
+    <div class="container">
+     <div class="login-box">
+        <h2>login</h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" [(ngModel)]="loginObj.username" name="username"  required>
+                <label >username</label>
+            </div>
+            <div class="input-box">
+                <input type="password" [(ngModel)]="loginObj.password" name="password"   required>
+                <label >password</label>
+            </div>
+            <button type="button" class="btn" (click)="onLogin()">login</button>
+        </form>
+     </div>
+    </div>
+</body> -->
+<form action="action_page.php" method="post" class="form" >
+    <div class="imgcontainer">
+        
+    </div>
+    <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" [(ngModel)]="loginObj.username" name="username"  required>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" [(ngModel)]="loginObj.password" name="password"  required>
+        <button type="button" class="btn" (click)="onLogin()">Login</button>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+</form>

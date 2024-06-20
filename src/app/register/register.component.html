@@ -1,0 +1,16 @@
+<form action="action_page.php" method="post" >
+    <div class="imgcontainer">
+        
+    </div>
+    <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" [(ngModel)]="registerObj.username" name="username"  required>
+        <label for="uname"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" [(ngModel)]="registerObj.email" name="email" required>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" [(ngModel)]="registerObj.password" name="password"  required>
+        <button type="button" class="btn" (click)="onLogin()">Register</button>
+        
+    </div>
+    
+</form>

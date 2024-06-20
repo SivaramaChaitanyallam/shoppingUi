@@ -1,0 +1,19 @@
+<div class="card-top cantainer-fluid"></div>
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of productlist">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="">
+                <h6>{{item.title}}</h6>
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</h5>
+                <p>{{item.price | currency:'INR':'symbol'}}</p>
+                <button class="btn btn-primary" (click)="addtocart(item)">add to cart</button>
+                <!-- <div class="add">
+                    <button (click)="handlequantity('min')">-</button>
+                    <input type="text" value="{{carditem}}"/>
+                    <button (click)="handlequantity('plus')" (click)="addtocart(item)">+</button>
+                </div> -->
+            </div>
+        </ng-container>
+    </div>
+</div>

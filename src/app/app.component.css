@@ -1,0 +1,38 @@
+/* styles.css */
+.mat-toolbar {
+    height: 64px; /* Set your desired height */
+    font-size: 18px;
+}
+
+.logo {
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+.spacer {
+    flex:2;
+}
+.example-label {
+    display: table-cell;
+    font-size: 90px;
+    margin-right: 60px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    max-width: 600px;
+  }
+  input[type=text] {
+    margin-right: 400px;
+    text-align: left;
+    width: 251px;
+   
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  /* When the input field gets focus, change its width to 100% */
+  input[type=text]:focus {
+    width: 100%;
+  }
